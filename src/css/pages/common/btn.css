@@ -1,0 +1,130 @@
+.btn {
+    & {
+        color: #fff;
+    }
+
+    &--hided {
+        display: none;
+    }
+
+    &--disabled {
+        opacity: .6;
+        cursor: not-allowed;
+    }
+
+    &--rounded {
+        border-radius: 10px;
+    }
+
+    &--wide {
+        width: 100%;
+    }
+
+    &--size {
+        &-s {
+            height: 30px;
+
+            padding: 0 10px;
+        }
+
+        &-l {
+            height: 50px;
+
+            padding: 10px;
+        }
+    }
+
+    &--add {
+        background-color: #00ad5d;
+    }
+
+    &--remove {
+        background-color: #c52a19;
+    }
+
+    &--switch {
+        background-color: #e7d93f;
+    }
+
+    &__icon {
+        & {
+            display: inline-block;
+            background: url('../../../images/icons-sprite.png') no-repeat 0 0;
+            background-size: auto 100%;
+        }
+
+        &--size {
+            &-s {
+                width: 17px;
+                height: 15px;
+
+                vertical-align: text-top;
+            }
+
+            &-l {
+                width: 34px;
+                height: 30px;
+            }
+        }
+
+        &--switch {
+            background-position-x: 0;
+        }
+
+        &--remove {
+            &-s {
+                background-position-x: -22px;
+            }
+        }
+
+        &--plus {
+            &-s {
+                background-position-x: -46px;
+            }
+
+            &-l {
+                background-position-x: -92px;
+            }
+        }
+
+        &--cross {
+            &-l {
+                background-position-x: -127px;
+            }
+        }
+    }
+
+    &__text {
+        & {
+            font-weight: 900;
+            font-family: 'Segoe UI', sans-serif;
+            vertical-align: top;
+        }
+
+        &--size {
+            &-s {
+                font-size: 16px;
+                padding-left: 5px;
+
+                vertical-align: baseline;
+            }
+
+            &-l {
+                font-size: 22px;
+                padding-left: 10px;
+            }
+        }
+
+        &--add {
+            color: #fff;
+        }
+
+        &--switch {
+            color: #fdfacd;
+        }
+
+        &--remove {
+            color: #ffafa6;
+        }
+    }
+}

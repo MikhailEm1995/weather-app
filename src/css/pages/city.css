@@ -1,0 +1,270 @@
+.main-city {
+    padding: 30px 15px 10px;
+    border-bottom: 2px dashed #e7d93f;
+}
+
+.cities {
+    padding: 60px 15px;
+}
+
+.city {
+    & {
+        color: #21286f;
+
+        padding-bottom: 50px;
+    }
+
+    &__header {
+        min-height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-sizing: border-box;
+
+        background-color: #fff;
+    }
+
+    &__location {
+        font: 900 18px/26px 'Segoe UI', sans-serif;
+        word-break: break-all;
+        word-wrap: break-word;
+
+        float: left;
+    }
+
+    &__time {
+        font: 600 14px/26px 'Segoe UI', sans-serif;
+
+        float: right;
+    }
+
+    &__status {
+        font: 900 18px/30px 'Segoe UI', sans-serif;
+        text-align: center;
+    }
+
+    &__btn-container {
+        text-align: right;
+    }
+}
+
+.weather {
+    & {
+        display: flex;
+        flex-direction: row;
+
+        padding-top: 15px;
+    }
+
+    &__wrapper--ta {
+        &-center {
+            text-align: center;
+        }
+
+        &-right {
+            text-align: right;
+        }
+
+        &-left {
+            text-align: left;
+        }
+    }
+
+    &__today,
+    &__forecast {
+        background-color: #fff;
+    }
+
+    &__forecast {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    &__today {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__bordered-tile {
+        border-right: 1px solid #9fa5d6;
+    }
+
+    &__tile {
+        & {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &--flexbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__date {
+        font: 600 14px 'Segoe UI', sans-serif;
+
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    &__descr {
+        font: 600 22px 'Segoe UI', sans-serif;
+    }
+
+    &__icon-container {
+        height: 100px;
+        padding: 10px 0;
+
+        text-align: center;
+    }
+
+    &__icon {
+        height: 100%;
+    }
+
+    &__temp {
+        padding-right: 10px;
+        font: 600 36px 'Segoe UI', sans-serif;
+    }
+}
+
+.details {
+    &__container {
+        height: 0;
+        padding: 0;
+
+        overflow: hidden;
+
+        background-color: #f8f8f8;
+
+        transition: height 1s, padding .5s;
+    }
+
+    &__container--opened {
+        height: 100px;
+        padding: 5px;
+    }
+
+    &__table {
+        width: 100%;
+        box-sizing: border-box;
+        color: #9099ac;
+    }
+
+    &__text {
+        padding-left: 10px;
+
+        font: 900 14px/20px 'Segoe UI', sans-serif;
+        text-align: left;
+    }
+
+    &__value {
+        padding-right: 10px;
+
+        font: 900 14px/20px 'Segoe UI', sans-serif;
+        text-align: right;
+    }
+
+    &__opener {
+        width: 100%;
+
+        font: 900 14px/25px 'Segoe UI', sans-serif;
+        color: #9099ac;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        background-color: #ebebeb;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1169px) {
+    .city {
+        &__header {
+            padding: 5px;
+        }
+
+        &__descr {
+            display: inline-block;
+            width: 40%;
+        }
+
+        &__status {
+            display: inline-block;
+            width: 35%;
+        }
+
+        &__btn-container {
+            display: inline-block;
+            width: 25%;
+        }
+    }
+
+    .weather {
+        & {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__today {
+            margin-bottom: 20px;
+        }
+
+        &__forecast {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .details {
+        & {
+            position: relative;
+            background-color: #f8f8f8;
+        }
+
+        &__opener {
+            width: 40%;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+            transition: none;
+        }
+
+        &__container--opened {
+            overflow: visible;
+        }
+
+        &__container--today {
+            width: 50%;
+            margin-left: 20px;
+        }
+
+        &__container--today:before {
+            display: block;
+            width: 115px;
+
+            font: 900 14px/25px 'Segoe UI', sans-serif;
+            color: #9099ac;
+
+            content: 'Main city';
+            position: absolute;
+            left: -64px;
+            top: 45px;
+
+            text-align: center;
+            background-color: #ebebeb;
+
+            transform: rotate(-90deg);
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.centering
+    .add-cities
+        .add-cities__wrapper
+            .col.col--12-1
+            .col.col--12-10.col--padding
+                h2(data-headerid='1').add-cities__heading Add some extra cities to look for their weather
+        .add-cities__wrapper
+            .col.col--12-1
+            .col.col--12-6
+                form.add-cities__form
+                    .col.col--12-6.col--padding
+                        label(for='country').add-cities__form-label Type country:
+                        input(name='country')#country.add-cities__form-input
+                    .col.col--12-6.col--padding
+                        label(for='city').add-cities__form-label Type city:
+                        input(name='city')#city.add-cities__form-input
+        .add-cities__wrapper
+            .col.col--12-1
+            .col.col--12-10.col--padding
+                .msg-container
+        .add-cities__wrapper.add-cities__add-all
+            .col.col--12-1.add-cities__reduced-block
+            .col.col--12-3.col--padding
+                h2(data-headerid='2').add-cities__heading.add-cities__heading--hided Found cities
+            .col.col--12-4
+            .col.col--12-3.col--padding
+                .btn-container
+                    button(data-mission='add all' title='This button adds all cities listed below').btn.btn--hided.btn--size-s.btn--add.btn--wide
+                        .btn__icon.btn__icon--size-s.btn__icon--plus-s
+                        span.btn__text.btn__text--add.btn__text--size-s.add-cities__add-all-btn-text Add all cities
+        .add-cities__wrapper
+            .col.col--12-1
+            .col.col--12-10
+                ul.cities-list

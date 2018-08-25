@@ -1,0 +1,39 @@
+.header {
+    & {
+        height: 100px;
+        width: 100vw;
+
+        background-color: #fff;
+
+        z-index: 999;
+    }
+
+    &__logo-container {
+        padding-top: 20px;
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__btns {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1169px) {
+    .header {
+        & {
+            height: auto;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        &__logo-container {
+            width: 20%;
+            margin: 0 auto;
+        }
+    }
+}

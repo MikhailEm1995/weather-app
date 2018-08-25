@@ -1,0 +1,129 @@
+.city(data-city='Sarapul')
+    .city__header
+        .col.col--12-3.col--padding
+            span.city__location Sarapul, Russia
+            span.city__time 11:32 am
+        .city__status.col.col--12-6
+        .city__btn-container.col.col--12-3.col--padding
+            button(data-mission='change' data-victim='Izhevsk' title='This button deletes related city').btn.btn--size-s.btn--remove.btn--rounded
+                span.btn__icon.btn__icon--remove-s.btn__icon--size-s
+                span.btn__text.btn__text--size-s.btn__text--remove remove
+    .weather
+        .col.col--12-3.col--padding-right
+            .weather__today
+                .weather__tile
+                    .weather__wrapper.weather__wrapper--ta-right
+                        span.weather__date Today
+                    .weather__wrapper.weather__wrapper--ta-center
+                        span.weather__descr Cloudy
+                    .weather__icon-container
+                        img(data-weather='cloudy' src=require('../../images/cloudy.svg') alt='Cloudy').weather__icon
+                    .weather__wrapper.weather__wrapper--ta-right
+                        span.weather__temp 29 °C
+        .col.col--12-9.col--padding-left
+            .weather__forecast
+                .col.col--12-4.col--padding-right.weather__bordered-tile
+                    .weather__tile
+                        .weather__wrapper.weather__wrapper--ta-right
+                            span.weather__date 31.08, Thursday
+                        .weather__wrapper.weather__wrapper--ta-center
+                            span.weather__descr Cloudy
+                        .weather__icon-container
+                            img(data-weather='cloudy' src=require('../../images/cloudy.svg') alt='Cloudy').weather__icon
+                        .weather__wrapper.weather__wrapper--ta-right
+                            span.weather__temp 29 °C
+                .col.col--12-4.col--padding.weather__bordered-tile
+                    .weather__tile
+                        .weather__wrapper.weather__wrapper--ta-right
+                            span.weather__date 1.09, Friday
+                        .weather__wrapper.weather__wrapper--ta-center
+                            span.weather__descr Cloudy
+                        .weather__icon-container
+                            img(data-weather='cloudy' src=require('../../images/cloudy.svg') alt='Cloudy').weather__icon
+                        .weather__wrapper.weather__wrapper--ta-right
+                            span.weather__temp 29 °C
+                .col.col--12-4.col--padding-left
+                    .weather__tile
+                        .weather__wrapper.weather__wrapper--ta-right
+                            span.weather__date 2.09, Saturday
+                        .weather__wrapper.weather__wrapper--ta-center
+                            span.weather__descr Cloudy
+                        .weather__icon-container
+                            img(data-weather='cloudy' src=require('../../images/cloudy.svg') alt='Cloudy').weather__icon
+                        .weather__wrapper.weather__wrapper--ta-right
+                            span.weather__temp 29 °C
+    .details(data-details='Sarapul')
+        .col.col--12-3.col--padding-right
+            .details__container
+                table.details__table
+                    tr.details__row
+                        th(scope='row').details__text Pressure
+                        td.details__value 689 mm
+                    tr.details__row
+                        th(scope='row').details__text Humidity
+                        td.details__value 79%
+                    tr.details__row
+                        th(scope='row').details__text Precip
+                        td.details__value 10 mm
+                    tr.details__row
+                        th(scope='row').details__text Wind's direction
+                        td.details__value E
+                    tr.details__row
+                        th(scope='row').details__text Wind's speed
+                        td.details__value 10 m/s
+            button(data-mission='toggle' data-toggle='details-1' data-state='hidden' title='This button shows more weather details').details__opener
+                | + more details
+        .col.col--12-9.col--padding-left
+            .details__container
+                .col.col--12-4.col--padding-right
+                    table.details__table
+                        tr.details__row
+                            th(scope='row').details__text Pressure
+                            td.details__value 689 mm
+                        tr.details__row
+                            th(scope='row').details__text Humidity
+                            td.details__value 79%
+                        tr.details__row
+                            th(scope='row').details__text Precip
+                            td.details__value 10 mm
+                        tr.details__row
+                            th(scope='row').details__text Wind's direction
+                            td.details__value E
+                        tr.details__row
+                            th(scope='row').details__text Wind's speed
+                            td.details__value 10 m/s
+                .col.col--12-4.col--padding
+                    table.details__table
+                        tr.details__row
+                            th(scope='row').details__text Pressure
+                            td.details__value 689 mm
+                        tr.details__row
+                            th(scope='row').details__text Humidity
+                            td.details__value 79%
+                        tr.details__row
+                            th(scope='row').details__text Precip
+                            td.details__value 10 mm
+                        tr.details__row
+                            th(scope='row').details__text Wind's direction
+                            td.details__value E
+                        tr.details__row
+                            th(scope='row').details__text Wind's speed
+                            td.details__value 10 m/s
+                .col.col--12-4.col--padding-left
+                    table.details__table
+                        tr.details__row
+                            th(scope='row').details__text Pressure
+                            td.details__value 689 mm
+                        tr.details__row
+                            th(scope='row').details__text Humidity
+                            td.details__value 79%
+                        tr.details__row
+                            th(scope='row').details__text Precip
+                            td.details__value 10 mm
+                        tr.details__row
+                            th(scope='row').details__text Wind's direction
+                            td.details__value E
+                        tr.details__row
+                            th(scope='row').details__text Wind's speed
+                            td.details__value 10 m/s
+

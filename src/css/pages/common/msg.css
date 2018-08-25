@@ -1,0 +1,111 @@
+.msg {
+    & {
+        height: 40px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        opacity: 1;
+
+        transition: opacity .8s;
+    }
+
+    &--faded-out {
+        opacity: 0;
+    }
+
+    &-container {
+        & {
+            min-height: 0;
+            max-height: 220px;
+            overflow: hidden;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        &__centering {
+            width: 1170px;
+
+            box-sizing: border-box;
+
+            margin: 0 auto;
+        }
+    }
+
+    &-container--position-fixed {
+        width: 100%;
+
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+    }
+
+    &-container--bg-gradient {
+        background: url('../../../images/gradient.png') repeat-x 0 100%;
+    }
+
+    &--error {
+        background-color: #d55a4c;
+        border: 1px solid #730f04;
+    }
+
+    &--success {
+        background-color: #00ad5d;
+        border: 1px solid #008246;
+    }
+
+    &__text {
+        & {
+            font: 600 16px/38px 'Segoe UI', sans-serif;
+            float: left;
+        }
+
+        &--error {
+            color: #ffafa6;
+        }
+
+        &--success {
+            color: #b2f0d3;
+        }
+    }
+
+    &__close {
+        & {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            margin-top: 7px;
+
+            float: right;
+
+            background: url('../../../images/icons-sprite.png') no-repeat 0 0;
+            background-size: cover;
+        }
+
+        &--error {
+            background-position-x: -37px;
+        }
+
+        &--success {
+            background-position-x: -140px;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1169px) {
+    .msg {
+        &-container {
+            & {
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            &__centering {
+                width: 100%;
+            }
+
+            &--position-fixed {
+                bottom: 10px;
+            }
+        }
+    }
+}

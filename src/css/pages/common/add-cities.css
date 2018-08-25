@@ -1,0 +1,107 @@
+.veil {
+    display: none;
+
+    width: 100vw;
+    height: calc(100% - 100px);
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+    overflow-y: scroll;
+
+    background: url('../../../images/veil.png') repeat 0 0;
+}
+
+.add-cities {
+    & {
+        padding: 45px 0;
+        box-sizing: border-box;
+        margin-top: 30px;
+
+        background: url('../../../images/container.png') repeat 0 0;
+    }
+
+    &__heading {
+        & {
+            font: 900 26px 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+
+        &--hided {
+            display: none;
+        }
+    }
+
+    &__form {
+        padding-top: 30px;
+    }
+
+    &__form-label {
+        display: block;
+
+        font: 600 14px/24px 'Segoe UI', sans-serif;
+        color: #fff;
+    }
+
+    &__form-input {
+        display: block;
+
+        width: 100%;
+        padding: 1px 10px;
+        box-sizing: border-box;
+
+        font: 600 14px/24px 'Segoe UI', sans-serif;
+        color: #000;
+    }
+}
+
+.cities-list {
+    & {
+        padding-top: 25px;
+    }
+
+    &__item {
+        color: #fff;
+        padding-bottom: 15px;
+    }
+
+    &__city {
+        font: 600 20px/30px 'Segoe UI', sans-serif;
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1169px) {
+    .veil {
+        height: 100vh;
+        top: 0;
+
+        padding: 150px 20px 20px;
+    }
+
+    .add-cities {
+        & {
+            padding: 45px 20px;
+        }
+
+        &__add-all {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__reduced-block {
+            display: flex;
+            flex-basis: 0;
+        }
+
+        &__heading {
+            font-size: 22px;
+        }
+
+        &__add-all-btn-text {
+            font-size: 14px;
+        }
+    }
+}
